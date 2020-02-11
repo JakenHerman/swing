@@ -42,6 +42,7 @@ const CompountInterestCalculator = () => {
         {AnnualCompoundInterestByYear(principal, interestRate, yearsToCompound)}{" "}
         in {yearsToCompound} years
       </p>
+
       <button onClick={() => setViewChart(true)}>View Chart</button>
       {viewChart && (
         <CompoundInterestOverTime
