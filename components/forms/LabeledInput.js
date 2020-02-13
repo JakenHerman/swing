@@ -12,7 +12,7 @@ const LabeledInput = ({ labelId, inputId, changeEvent, label, reset }) => {
         aria-labelledby={labelId}
         onChange={e => {
           changeEvent(e.target.value);
-          reset(false);
+          if (reset) { reset(false) };
         }}
       />
     </div>

@@ -1578,9 +1578,9 @@ browserslist@^4.6.0, browserslist@^4.6.4, browserslist@^4.8.3:
     node-releases "^1.1.47"
 
 buckjs@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/buckjs/-/buckjs-1.0.0.tgz#11d29d3880866e2ff381d69a619cfb1df0c75455"
-  integrity sha512-B0yY5N8ydrL2K488VEnYexNBrnqwsEmMYr/dT5aHrWjyF57WxyimJezKVpWIKMIRU6KdMNG2kZDhk/iXXIPcRg==
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/buckjs/-/buckjs-1.0.1.tgz#cc32adf588adfcdee81c96da193d16a37de05117"
+  integrity sha512-jnIM1TtK2I8U5XYiFQfbAvUxx+qYeZSNIKcQcq4srqlEHqY0QqaTKm4yF8NmPdOUSUXI/d2nF0jETEDBQN24CQ==
   dependencies:
     mocha "^7.0.1"
 

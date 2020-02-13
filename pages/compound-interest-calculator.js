@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import Nav from "../components/nav";
-import Head from "../components/head";
 import LabeledInput from "../components/forms/LabeledInput";
 import CompoundInterestOverTime from "../components/visuals/CompoundInterestOverTime";
 import * as buck from 'buckjs';
-import { Pane, Button } from 'evergreen-ui';
+import { Pane, Button, Heading } from 'evergreen-ui';
 import Layout from '../components/Layout';
 
 const CompoundInterestCalculator = () => {
@@ -14,9 +12,7 @@ const CompoundInterestCalculator = () => {
   const [viewChart, setViewChart] = useState(false);
 
   return (
-    <Layout>
-      <Head title="Compound Interest Calculator" />
-      <Nav />
+    <Layout title='Compound Interest Calculator'>
 <Pane clearfix>
 <Pane
     elevation={4}
@@ -30,7 +26,7 @@ const CompoundInterestCalculator = () => {
     flexDirection="column"
   >
     <div style= {{ margin: 25 }}>
-      <h1>Compound Interest Calculator</h1>
+      <Heading size={900}>Compound Interest Calculator</Heading>
       <LabeledInput
         label="Principal"
         labelId="principalLabel"
