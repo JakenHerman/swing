@@ -1,32 +1,21 @@
 import React from "react";
 import Link from "next/link";
-
-const links = [
-  {
-    href: "/compount-interest-calculator",
-    label: "Compount Interest Calculator"
-  },
-  { href: "https://github.com/jakenherman/swing", label: "GitHub" }
-].map(link => {
-  link.key = `nav-link-${link.href}-${link.label}`;
-  return link;
-});
+import { Pane, Button, Text, Heading } from 'evergreen-ui'
 
 const Nav = () => (
-  <nav>
-    <ul>
-      <li>
-        <Link href="/">
-          <a>Home</a>
-        </Link>
-      </li>
-      {links.map(({ key, href, label }) => (
-        <li key={key}>
-          <a href={href}>{label}</a>
-        </li>
-      ))}
-    </ul>
-  </nav>
+  <Pane display="flex" padding={16} background="tint2" borderRadius={3}>
+    <Pane flex={1} alignItems="center" display="flex">
+      <Link href='/'>
+        <Heading size={600} style={{ cursor: 'pointer', color: '#C6D1CF' }}>swing</Heading>
+      </Link>
+    </Pane>
+    <Pane>
+      {/* Below you can see the marginRight property on a Button. */}
+      <Link href='/compound-interest-calculator'>
+        <Button marginRight={16}>Compound Interest calculator</Button>
+      </Link>
+    </Pane>
+  </Pane>
 );
 
 export default Nav;

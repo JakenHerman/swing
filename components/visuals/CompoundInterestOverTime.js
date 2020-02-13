@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import * as Highcharts from "highcharts";
-import { AnnualCompoundInterestByYear } from "../../utilities/calculations/compound_interest";
+import * as buck from 'buckjs';
 
 const CompoundInterestOverTime = ({
   principal,
@@ -17,7 +17,7 @@ const CompoundInterestOverTime = ({
       },
 
       title: {
-        text: "Compount Interest Over Time"
+        text: "Compound Interest Over Time"
       },
 
       legend: {
@@ -91,7 +91,7 @@ const CompoundInterestOverTime = ({
 
       const tempAmounts = amounts;
       tempAmounts.push(
-        +AnnualCompoundInterestByYear(principal, interestRate, i)
+        +buck.annualCompoundInterestByYear(principal, interestRate, i)
       );
       setAmounts(tempAmounts);
     }

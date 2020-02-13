@@ -1,20 +1,35 @@
 import React, { useState } from "react";
 import Nav from "../components/nav";
 import Head from "../components/head";
-import { AnnualCompoundInterestByYear } from "../utilities/calculations/compound_interest";
 import LabeledInput from "../components/forms/LabeledInput";
 import CompoundInterestOverTime from "../components/visuals/CompoundInterestOverTime";
+import * as buck from 'buckjs';
+import { Pane, Button } from 'evergreen-ui';
+import Layout from '../components/Layout';
 
-const CompountInterestCalculator = () => {
+const CompoundInterestCalculator = () => {
   const [principal, setPrincipal] = useState(0);
   const [interestRate, setInterestRate] = useState(0);
   const [yearsToCompound, setYearsToCompound] = useState(0);
   const [viewChart, setViewChart] = useState(false);
 
   return (
-    <div>
+    <Layout>
       <Head title="Compound Interest Calculator" />
       <Nav />
+<Pane clearfix>
+<Pane
+    elevation={4}
+    float="left"
+    backgroundColor="#868DA4"
+    color='#F1F1F0'
+    margin={24}
+    display="flex"
+    justifyContent="center"
+    alignItems="center"
+    flexDirection="column"
+  >
+    <div style= {{ margin: 25 }}>
       <h1>Compound Interest Calculator</h1>
       <LabeledInput
         label="Principal"
@@ -31,7 +46,7 @@ const CompountInterestCalculator = () => {
         reset={setViewChart}
       />
       <LabeledInput
-        label="Years to Compount"
+        label="Years to Compound"
         labelId="yearsLabel"
         inputId="compoundingYears"
         changeEvent={setYearsToCompound}
@@ -39,11 +54,27 @@ const CompountInterestCalculator = () => {
       />
       <p>
         {principal} with a {interestRate}% annual compound interest would be{" "}
-        {AnnualCompoundInterestByYear(principal, interestRate, yearsToCompound)}{" "}
+        {buck.annualCompoundInterestByYear(principal, interestRate, yearsToCompound)}{" "}
         in {yearsToCompound} years
       </p>
 
-      <button onClick={() => setViewChart(true)}>View Chart</button>
+      <Button
+          appearance="primary"
+          marginRight={16}
+          onClick={() => setViewChart(true)}
+      >View Chart</Button>
+    </div>
+  </Pane>
+
+      <Pane
+    elevation={4}
+    float="left"
+    margin={24}
+    display="flex"
+    justifyContent="center"
+    alignItems="center"
+    flexDirection="column"
+  >
       {viewChart && (
         <CompoundInterestOverTime
           principal={principal}
@@ -51,8 +82,13 @@ const CompountInterestCalculator = () => {
           yearsToCompound={yearsToCompound}
         />
       )}
-    </div>
+  </Pane>
+
+    </Pane>
+    </Layout>
+
+
   );
 };
 
-export default CompountInterestCalculator;
+export default CompoundInterestCalculator;
