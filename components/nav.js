@@ -25,6 +25,15 @@ const Nav = () => {
               justifyContent="center"
             >
               <Pane style={{ width: '100%' }}>  
+              <Table.Row
+                  isSelectable
+                  intent='none'
+                  style={{ width: '100% '}}
+                >
+                  <Link href='/fifty-thirty-twenty'>
+                    <Table.TextCell>50/30/20 Rule Calculator</Table.TextCell>
+                  </Link>
+                </Table.Row>
                 <Table.Row
                   isSelectable
                   intent='none'

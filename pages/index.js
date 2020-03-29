@@ -8,6 +8,18 @@ const Home = () => {
 
   return (
     <Layout title='Home'>
+        <Alert
+          intent="danger"
+          style={{ width: '75%', marginLeft: 'auto', marginRight: 'auto', marginTop: 10 }}
+          title="How COVID-19 is Impacting Us"
+          marginBottom={32}
+          onClick={() => window.location.href = 'http://ariely.info/Blog/tabid/83/EntryId/247/The-Azure-Coronavirus-COVID-19-effect-This-location-is-not-available-for-subscription.aspx'}
+        >
+          We've got a fantastic new budgeting tool that has been created, and we finally have an MVP that we'd like to share with you all as soon as possible.
+          Unfortunately, due to the global impact of COVID-19, Microsoft Azure SQL Servers are currently, understandably, being reserved for first responders, health and emergency management services, and more critical use-cases.
+          For a full explanation, click on this alert.
+          When we all make it through this pandemic together, rest asured there will be a shiny new budgeting app awaiting you.
+        </Alert>
       <div style={{ width: '80%', marginLeft: 'auto', marginRight: 'auto' }}>
         <Heading size={900} marginTop="default">🤑 Handy tools for financial folks.</Heading>
         <div>
@@ -18,19 +30,19 @@ const Home = () => {
             <Heading size={500}>What's new?</Heading>
             <Alert
               intent="none"
+              title="50/30/20 Rule Calculator"
+              marginBottom={32}
+              style={{ width: '35%' }}
+            >
+              This calculator can be used to calculate budget categories using your monthly income based on the famous 50/30/20 rule.
+            </Alert>
+            <Alert
+              intent="none"
               title="Amortization Calculator"
               marginBottom={32}
               style={{ width: '35%' }}
             >
               This calculator can be used to calculate the monthly payment of a loan given the principle, interest rate, and the length of the loan (in years).
-            </Alert>
-            <Alert
-              intent="none"
-              title="Compound Interest Calculator"
-              marginBottom={32}
-              style={{ width: '35%' }}
-            >
-              This calculator can be used to calculate the interest earned each compounding period on a given principle with a bar chart showing the amount of the account over the years. 
             </Alert>
           </>
         </div>
