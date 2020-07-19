@@ -1577,10 +1577,10 @@ browserslist@^4.6.0, browserslist@^4.6.4, browserslist@^4.8.3:
     electron-to-chromium "^1.3.341"
     node-releases "^1.1.47"
 
-buckjs@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/buckjs/-/buckjs-1.0.1.tgz#cc32adf588adfcdee81c96da193d16a37de05117"
-  integrity sha512-jnIM1TtK2I8U5XYiFQfbAvUxx+qYeZSNIKcQcq4srqlEHqY0QqaTKm4yF8NmPdOUSUXI/d2nF0jETEDBQN24CQ==
+buckjs@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/buckjs/-/buckjs-1.0.2.tgz#de7f4c67bd64ae1562da3442a57602029a046f4d"
+  integrity sha512-b5rRC7mbOjZpVaX/B9XcI2jvOkuCBQhAgfjval/YjKSecd2Vf05/7AZw00SdomHpa7RFkwNc5wHZI7fJYPPKVQ==
   dependencies:
     mocha "^7.0.1"
 
@@ -3605,9 +3605,9 @@ lodash.templatesettings@^4.0.0:
     lodash._reinterpolate "^3.0.0"
 
 lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.15, lodash@^4.17.4:
-  version "4.17.15"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+  version "4.17.19"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
+  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
 
 log-symbols@2.2.0, log-symbols@^2.2.0:
   version "2.2.0"
