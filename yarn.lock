@@ -1577,10 +1577,10 @@ browserslist@^4.6.0, browserslist@^4.6.4, browserslist@^4.8.3:
     electron-to-chromium "^1.3.341"
     node-releases "^1.1.47"
 
-buckjs@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/buckjs/-/buckjs-1.0.1.tgz#cc32adf588adfcdee81c96da193d16a37de05117"
-  integrity sha512-jnIM1TtK2I8U5XYiFQfbAvUxx+qYeZSNIKcQcq4srqlEHqY0QqaTKm4yF8NmPdOUSUXI/d2nF0jETEDBQN24CQ==
+buckjs@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/buckjs/-/buckjs-1.0.2.tgz#de7f4c67bd64ae1562da3442a57602029a046f4d"
+  integrity sha512-b5rRC7mbOjZpVaX/B9XcI2jvOkuCBQhAgfjval/YjKSecd2Vf05/7AZw00SdomHpa7RFkwNc5wHZI7fJYPPKVQ==
   dependencies:
     mocha "^7.0.1"
 
@@ -3005,10 +3005,10 @@ he@1.2.0:
   resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
   integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
 
-highcharts@8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/highcharts/-/highcharts-8.0.0.tgz#fcf77a511d6ea477b9d8447afd9dedbfc85e2727"
-  integrity sha512-jRKLiP0i29zKSEgMDASyrfpivrM3e8V8yTv8YUZtRzB2mXR+hsBNHWZw2hNRZVxqq1QCVmW/9Z/BLFvYlJELqA==
+highcharts@9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/highcharts/-/highcharts-9.0.0.tgz#2e5d382481f71c50ac7f086e7bdead394fab71d4"
+  integrity sha512-MJCtidFytGSQvsV3OEM+vFTLpjUcp7jmFpLn8h3oL4WKp0gxUOQg6Nw00sqMWGdiadst0gOZO4804zynTcYjZQ==
 
 hmac-drbg@^1.0.0:
   version "1.0.1"
