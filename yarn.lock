@@ -1577,10 +1577,10 @@ browserslist@^4.6.0, browserslist@^4.6.4, browserslist@^4.8.3:
     electron-to-chromium "^1.3.341"
     node-releases "^1.1.47"
 
-buckjs@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/buckjs/-/buckjs-1.0.1.tgz#cc32adf588adfcdee81c96da193d16a37de05117"
-  integrity sha512-jnIM1TtK2I8U5XYiFQfbAvUxx+qYeZSNIKcQcq4srqlEHqY0QqaTKm4yF8NmPdOUSUXI/d2nF0jETEDBQN24CQ==
+buckjs@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/buckjs/-/buckjs-1.0.2.tgz#de7f4c67bd64ae1562da3442a57602029a046f4d"
+  integrity sha512-b5rRC7mbOjZpVaX/B9XcI2jvOkuCBQhAgfjval/YjKSecd2Vf05/7AZw00SdomHpa7RFkwNc5wHZI7fJYPPKVQ==
   dependencies:
     mocha "^7.0.1"
 
@@ -5949,9 +5949,9 @@ typedarray@^0.0.6:
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
 ua-parser-js@^0.7.18:
-  version "0.7.21"
-  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.21.tgz#853cf9ce93f642f67174273cc34565ae6f308777"
-  integrity sha512-+O8/qh/Qj8CgC6eYBVBykMrNtp5Gebn4dlGD/kKXVkJNDwyrAwSIqwz8CDf+tsAIWVycKcku6gIXJ0qwx/ZXaQ==
+  version "0.7.28"
+  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.28.tgz#8ba04e653f35ce210239c64661685bf9121dec31"
+  integrity sha512-6Gurc1n//gjp9eQNXjD9O3M/sMwVtN5S8Lv9bvOYBfKfDNiIIhqiyi01vMBO45u4zkDE420w/e0se7Vs+sIg+g==
 
 ui-box@^2.1.2:
   version "2.1.3"
